@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:alicsnet_app/util/shared_preferences_util.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -51,6 +53,8 @@ class MyApp extends StatelessWidget {
     ],
     child:
     MaterialApp.router(
+      scrollBehavior: MaterialScrollBehavior().copyWith(dragDevices:{PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,}),
       title: 'Alicsnet APP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
