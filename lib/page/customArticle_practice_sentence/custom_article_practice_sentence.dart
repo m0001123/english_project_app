@@ -116,7 +116,7 @@ class _CustomArticlePracticeSentenceIndexPage
           final snackbar = SnackBar(
             content: Text(text),
           );
-          _scaffoldKey.currentState?.showSnackBar(snackbar);
+          //_scaffoldKey.currentState?.showSnackBar(snackbar);
         }
         if (sentenceSegmentation['apiStatus'] == 'success' &&
             getStatitics['apiStatus'] == 'success') {
@@ -153,7 +153,7 @@ class _CustomArticlePracticeSentenceIndexPage
             final snackbar = SnackBar(
               content: Text(text),
             );
-            _scaffoldKey.currentState?.showSnackBar(snackbar);
+            //_scaffoldKey.currentState?.showSnackBar(snackbar);
             setState(() {
               isloading = false;
             });
@@ -163,7 +163,7 @@ class _CustomArticlePracticeSentenceIndexPage
           final snackbar = SnackBar(
             content: Text(text),
           );
-          _scaffoldKey.currentState?.showSnackBar(snackbar);
+          //_scaffoldKey.currentState?.showSnackBar(snackbar);
           setState(() {
             isloading = false;
           });
@@ -176,7 +176,7 @@ class _CustomArticlePracticeSentenceIndexPage
         final snackbar = SnackBar(
           content: Text(text),
         );
-        _scaffoldKey.currentState?.showSnackBar(snackbar);
+        //_scaffoldKey.currentState?.showSnackBar(snackbar);
       }
     } catch (error) {
       setState(() {
@@ -186,7 +186,7 @@ class _CustomArticlePracticeSentenceIndexPage
       final snackbar = SnackBar(
         content: Text(text),
       );
-      _scaffoldKey.currentState?.showSnackBar(snackbar);
+      //_scaffoldKey.currentState?.showSnackBar(snackbar);
       return;
     }
   }
@@ -631,7 +631,7 @@ class CustomAlertDialog extends StatelessWidget {
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
         child: Stack(
-          overflow: Overflow.visible,
+          //overflow: Overflow.visible,
           alignment: Alignment.topCenter,
           children: [
             Container(
